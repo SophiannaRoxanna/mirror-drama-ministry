@@ -1,0 +1,71 @@
+@import './variables/colours.scss';
+@import './variables/fonts.scss';
+@import 'components/header.scss';
+@import 'components/article-sessions.scss'; 
+@import 'components/components.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $openSans;
+
+    // added padding to adjust content because of fixed header
+    padding-top: 5em;
+}
+
+.bible-motto {
+    width: 100%;
+    height: 50vh;
+    max-height: 400px;
+    background: $gray-bg;
+    padding: 0 20%;
+    position: relative;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    q {
+        width: 100%;
+        font-size: 1.5em;
+        color: $white;
+        text-align: right;
+        position: relative;
+
+        &:before {
+            content: " \" ";
+            color: $red-border;
+            font-size: 5em;
+            position: absolute;
+            left: -0.33em;
+            top: -0.4em;
+        }   
+    }
+
+    p {
+        align-self: flex-end;
+        font-style: italic;
+        margin-top: 0.3em;
+        color: $white;
+    }
+
+    .svg-holder {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 100px;
+        overflow: hidden;
+
+        img { 
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    } 
+}  

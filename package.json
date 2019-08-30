@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@mdi/font": "^4.1.95"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2"
+  }
+}

@@ -1,0 +1,117 @@
+main > section {
+    padding: 2em 3em 0;
+
+    .section-title {
+        display: flex;
+        height: 20%;
+        max-height: 100px;
+        align-items: center;
+        margin-bottom: 1em;
+
+        .icon-holder {
+            height: 100%;
+            max-width: 60px;
+            font-size: 2.5em;
+            line-height: 100%;
+            margin-right: 0.2em;
+            display: flex;
+            align-items: center;
+        }
+
+        .title {
+            h2 { 
+                margin: 2px 0;
+                color: $blue;
+            }
+        } 
+    }  
+
+    .sub-cont {
+        padding: 0 1.5em;
+    }
+}   
+ 
+.sub-heading { 
+    display: flex; 
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    color: $sec-font; 
+
+    .icon-cont {
+        margin-right: 10px;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+    } 
+
+    h4 {  
+        margin: 3px 0; 
+    }
+} 
+
+.card-container.flex {
+    display: flex;
+
+
+    .card {
+        width: 50%;
+
+        flex-grow: 1;
+        flex-shrink: 0;
+        padding: 0 1.5em;
+
+        ol, p {
+            font-size: 0.8em;
+            text-align: justify;
+            font-weight: 100;
+
+            li {
+                margin-bottom: 0.8em;
+            } 
+        }
+    }
+}    
+
+.card-cont.grid { 
+    display: grid; 
+    grid-template-columns: 400px;
+    gap: 10px;  
+    grid-auto-flow: row; 
+
+    padding: 0 2em;
+    margin-bottom: 20px;
+
+    .card {
+        max-width: 300px;
+        min-width: 300px;
+        min-height: 300px;
+        max-height: 300px;
+        transition: 0.3s ease;
+        padding: 0.5em 0.8em;
+        box-shadow: 0 0 2px $shadow;
+
+        figure {
+            width: 100%;
+            height: 90%;
+            margin: 0 0 10px;
+
+            img { 
+                width: 100%; 
+                height: 100%; 
+                object-fit: fill;
+            } 
+        } 
+
+        .title {
+            font-size: 0.8em;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        &:hover { 
+            box-shadow: 0 0 10px $green;
+
+        }
+    }
+}  

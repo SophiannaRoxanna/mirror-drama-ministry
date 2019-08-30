@@ -1,0 +1,228 @@
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1.3em;
+  padding: 0 0.8em;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+header figure {
+  width: 20%;
+  height: 100%;
+  max-width: 100px;
+  max-height: 90px;
+  margin: 0;
+}
+header figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+}
+header nav li {
+  margin-right: 1em;
+  font-weight: 100;
+}
+header nav li.active {
+  font-size: 1.1em;
+  font-weight: bold;
+  border-bottom: solid 2px #EB5757;
+}
+header nav li:hover a {
+  color: #EB5757;
+}
+header nav li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+main > section {
+  padding: 2em 3em 0;
+}
+main > section .section-title {
+  display: flex;
+  height: 20%;
+  max-height: 100px;
+  align-items: center;
+  margin-bottom: 1em;
+}
+main > section .section-title .icon-holder {
+  height: 100%;
+  max-width: 60px;
+  font-size: 2.5em;
+  line-height: 100%;
+  margin-right: 0.2em;
+  display: flex;
+  align-items: center;
+}
+main > section .section-title .title h2 {
+  margin: 2px 0;
+  color: #1E7E7E;
+}
+main > section .sub-cont {
+  padding: 0 1.5em;
+}
+
+.sub-heading {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  color: #333333;
+}
+.sub-heading .icon-cont {
+  margin-right: 10px;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+}
+.sub-heading h4 {
+  margin: 3px 0;
+}
+
+.card-container.flex {
+  display: flex;
+}
+.card-container.flex .card {
+  width: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 0 1.5em;
+}
+.card-container.flex .card ol, .card-container.flex .card p {
+  font-size: 0.8em;
+  text-align: justify;
+  font-weight: 100;
+}
+.card-container.flex .card ol li, .card-container.flex .card p li {
+  margin-bottom: 0.8em;
+}
+
+.card-cont.grid {
+  display: grid;
+  grid-template-columns: 400px;
+  gap: 10px;
+  grid-auto-flow: row;
+  padding: 0 2em;
+  margin-bottom: 20px;
+}
+.card-cont.grid .card {
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  transition: 0.3s ease;
+  padding: 0.5em 0.8em;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+.card-cont.grid .card figure {
+  width: 100%;
+  height: 90%;
+  margin: 0 0 10px;
+}
+.card-cont.grid .card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.card-cont.grid .card .title {
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.card-cont.grid .card:hover {
+  box-shadow: 0 0 10px #219653;
+}
+
+div.border {
+  width: 80px;
+  height: 2px;
+  background: #219653;
+}
+
+.blue {
+  color: #1E7E7E;
+}
+
+.red {
+  color: #EB5757;
+}
+
+.gray {
+  color: #333333;
+}
+
+.orange {
+  color: #D37B32;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 5em;
+}
+
+.bible-motto {
+  width: 100%;
+  height: 50vh;
+  max-height: 400px;
+  background: #828282;
+  padding: 0 20%;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.bible-motto q {
+  width: 100%;
+  font-size: 1.5em;
+  color: #ffffff;
+  text-align: right;
+  position: relative;
+}
+.bible-motto q:before {
+  content: ' " ';
+  color: #EB5757;
+  font-size: 5em;
+  position: absolute;
+  left: -0.33em;
+  top: -0.4em;
+}
+.bible-motto p {
+  align-self: flex-end;
+  font-style: italic;
+  margin-top: 0.3em;
+  color: #ffffff;
+}
+.bible-motto .svg-holder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100px;
+  overflow: hidden;
+}
+.bible-motto .svg-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=layout.css.map */
