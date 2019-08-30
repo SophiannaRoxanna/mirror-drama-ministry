@@ -124,7 +124,7 @@ main > section .sub-cont {
   max-height: 300px;
   transition: 0.3s ease;
   padding: 0.5em 0.8em;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 .card-cont.grid .card figure {
   width: 100%;
@@ -140,6 +140,11 @@ main > section .sub-cont {
   font-size: 0.8em;
   font-weight: bold;
   letter-spacing: 0.05em;
+  margin-bottom: 0;
+}
+.card-cont.grid .card .time-stamp {
+  font-size: 0.6em;
+  margin-top: 5px;
 }
 .card-cont.grid .card:hover {
   box-shadow: 0 0 10px #219653;

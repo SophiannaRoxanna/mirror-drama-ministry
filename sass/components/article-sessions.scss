@@ -89,7 +89,7 @@ main > section {
         max-height: 300px;
         transition: 0.3s ease;
         padding: 0.5em 0.8em;
-        box-shadow: 0 0 2px $shadow;
+        box-shadow: 0 0 5px $shadow;
 
         figure {
             width: 100%;
@@ -107,6 +107,12 @@ main > section {
             font-size: 0.8em;
             font-weight: bold;
             letter-spacing: 0.05em;
+            margin-bottom: 0;
+        }
+
+        .time-stamp {
+            font-size: 0.6em;
+             margin-top: 5px;
         }
         
         &:hover { 
