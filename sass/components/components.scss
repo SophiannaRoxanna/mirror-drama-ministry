@@ -1,11 +1,32 @@
-div.border {
-    width: 80px;
-    height: 2px;
-    background: $green;
-}   
+*::-webkit-scrollbar {
+    width: 1em;
+    padding: 0.2em;
+}
 
+*::-webkit-scrollbar-track{
+    background: $white;
+    box-shadow: inset 0px 0px 10px $shadow;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-button{
+    display: none;
+}
+
+*::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: $gray-bg;
+    height: 0.8em;
+}
+ 
+div.border { 
+    width: 80px;
+    height: 2px; 
+    background: $green;
+}      
+ 
 .blue {
-    color: $blue;
+    color: $blue; 
 } 
 
 .red {
@@ -15,7 +36,7 @@ div.border {
 .gray {
     color: $sec-font;
 }  
-
+ 
 .orange {
     color: $orange;
 }
