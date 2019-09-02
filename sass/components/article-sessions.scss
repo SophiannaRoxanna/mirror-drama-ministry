@@ -21,7 +21,6 @@ main > section {
         .title {
             h2 { 
                 margin: 2px 0;
-                color: $blue;
             }
         } 
     }  
@@ -74,50 +73,123 @@ main > section {
 }    
 
 .card-cont.grid { 
+    min-height: 350px;
+    max-height: 350px;
     display: grid; 
-    grid-template-columns: 400px;
     gap: 10px;  
-    grid-auto-flow: row; 
+    grid-auto-flow: column; 
+    overflow-x: auto; 
 
-    padding: 0 2em;
+    padding: 1em 0.8em;
     margin-bottom: 20px;
 
     .card {
         max-width: 300px;
         min-width: 300px;
-        min-height: 300px;
+        min-height: 300px; 
         max-height: 300px;
         transition: 0.3s ease;
-        padding: 0.5em 0.8em;
+        padding: 0.5em 0.8em; 
         box-shadow: 0 0 5px $shadow;
 
         figure {
             width: 100%;
-            height: 90%;
-            margin: 0 0 10px;
-
+            height: 80%;
+            min-height: 250px;
+            max-height: 250px;
+            margin: 0 0 10px; 
+            overflow: hidden;
+ 
             img { 
                 width: 100%; 
                 height: 100%; 
-                object-fit: fill;
+                object-fit: cover;  
+                object-position: center;
             } 
-        } 
+        }   
 
         .title {
             font-size: 0.8em;
             font-weight: bold;
-            letter-spacing: 0.05em;
-            margin-bottom: 0;
+            letter-spacing: 0.05em; 
+            margin:5px 0 0;
+            flex-shrink: 0;
         }
-
+ 
+        .info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+ 
         .time-stamp {
             font-size: 0.6em;
-             margin-top: 5px;
+             margin: 5px 0 0;
+             flex-shrink: 0;
         }
-        
-        &:hover { 
+
+        &:hover {  
             box-shadow: 0 0 10px $green;
 
-        }
+        }     
+    }
+}   
+
+.ministered {  
+
+    .info {
+        display: block;
     }
 }  
+
+.card-cont.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+    padding: 1em 2em; 
+    overflow-x: auto;
+
+    
+    .card {
+        min-height: 130px;
+        max-height: 130px;
+        width: 10%;
+        max-width: 150px;
+        filter: grayscale(0.9);
+        transition: 0.4s ease-in-out;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+
+        &:hover {
+            filter: none;
+        }
+
+        .church-logo-holder { 
+            width: 100%;
+            height: 70%;
+            max-height: 80px;
+            margin: 0;  
+            overflow: hidden;
+
+            img {
+                width: 100%; 
+                height: 30%;  
+                object-fit: cover;
+                object-position: center;
+            }
+        } 
+
+        .info {
+            font-size: 0.8em; 
+            text-align: center;
+            font-weight: bold; 
+            color: $green;
+            
+            .title {
+                margin-bottom: 0;
+            }
+        }
+    }
+} 
