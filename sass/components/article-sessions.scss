@@ -63,7 +63,7 @@ main > section {
         ol, p {
             font-size: 0.8em;
             text-align: justify;
-            font-weight: 100;
+            font-weight: 400;
 
             li {
                 margin-bottom: 0.8em;
@@ -74,7 +74,7 @@ main > section {
 
 .card-cont.grid { 
     min-height: 350px;
-    max-height: 350px;
+    max-height: 350px; 
     display: grid; 
     gap: 10px;  
     grid-auto-flow: column; 

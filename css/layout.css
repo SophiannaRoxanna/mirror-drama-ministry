@@ -102,7 +102,7 @@ main > section .sub-cont {
 .card-container.flex .card ol, .card-container.flex .card p {
   font-size: 0.8em;
   text-align: justify;
-  font-weight: 100;
+  font-weight: 400;
 }
 .card-container.flex .card ol li, .card-container.flex .card p li {
   margin-bottom: 0.8em;
@@ -353,6 +353,11 @@ div.border {
   align-items: center;
   position: relative;
   z-index: 100;
+  transition: 1s ease-in-out;
+  left: 0;
+}
+.intro.hide {
+  left: 110vw;
 }
 .intro .cont {
   width: 70%;
@@ -379,10 +384,10 @@ div.border {
   border: solid #828282;
 }
 .intro .circle-1 {
-  animation: circle 2s infinite;
+  animation: circle 2s infinite ease-out;
 }
 .intro .circle-2 {
-  animation: circle 2s 1s infinite;
+  animation: circle 2s 1s infinite ease-out;
 }
 
 @keyframes circle {
@@ -391,10 +396,22 @@ div.border {
     height: 0%;
   }
   100% {
-    width: 30%;
-    height: 50%;
+    width: 40%;
+    height: 60%;
   }
 }
+.body {
+  transition: 1s ease-in-out;
+  position: relative;
+}
+.body.hide {
+  left: -110vw;
+}
+.body.show {
+  display: block;
+  left: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -456,10 +473,6 @@ body {
 main {
   margin-bottom: 250px;
   background: #ffffff;
-}
-
-header, main, footer {
-  display: none;
 }
 
 /*# sourceMappingURL=layout.css.map */
