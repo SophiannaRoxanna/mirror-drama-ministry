@@ -3,6 +3,7 @@
 @import 'components/header.scss';
 @import 'components/article-sessions.scss'; 
 @import 'components/components.scss';
+@import 'components/intro.scss';
 
 * {
     box-sizing: border-box;
@@ -10,10 +11,10 @@
 
 body {
     margin: 0;
-    font-family: $openSans;
+    font-family: $quicksand;
 
     // added padding to adjust content because of fixed header
-    padding-top: 5em;
+    // padding-top: 5em;
 }
 
 .bible-motto {
@@ -21,8 +22,9 @@ body {
     height: 50vh;
     max-height: 400px;
     background: $gray-bg;
-    padding: 0 20%;
+    padding: 0 20%; 
     position: relative;
+    margin-top: 5em;
 
     display: flex;
     flex-flow: column;
@@ -68,4 +70,14 @@ body {
             object-fit: cover;
         }
     } 
+} 
+
+main {
+    margin-bottom: 250px;
+    background: $white;
+
 }  
+
+header, main, footer {
+    display: none; 
+}

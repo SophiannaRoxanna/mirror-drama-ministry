@@ -1,32 +1,30 @@
-*::-webkit-scrollbar {
-    width: 1em;
-    padding: 0.2em;
+.card-cont::-webkit-scrollbar {
+    width: 0.6em;
 }
 
-*::-webkit-scrollbar-track {
+.card-cont::-webkit-scrollbar-track {
     background: $white;
     box-shadow: inset 0px 0px 10px $shadow;
     border-radius: 10px;
 }
-
-*::-webkit-scrollbar-button {
+ 
+.card-cont::-webkit-scrollbar-button {
     display: none;
 }
 
-*::-webkit-scrollbar-thumb {
+.card-cont::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: $gray-bg;
-    height: 0.8em;
-}
-
+    background: $gray-bg-sec;
+} 
+ 
 div.border {
-    width: 80px;
+    width: 80px; 
     height: 2px;
-    background: $green;
+    background: $green;  
 }
-
-.blue {
-    color: $blue;
+ 
+.blue { 
+    color: $blue; 
 }
 
 .red {

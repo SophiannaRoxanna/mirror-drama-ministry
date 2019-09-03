@@ -12,7 +12,7 @@ main > section {
             height: 100%;
             max-width: 60px;
             font-size: 2.5em;
-            line-height: 100%;
+            line-height: 100%; 
             margin-right: 0.2em;
             display: flex;
             align-items: center;
@@ -191,3 +191,112 @@ main > section {
         }
     }
 } 
+
+.cta {
+    margin: 1em 0 0;
+    padding: 2em;
+    text-align: center; 
+    // background: $gray-bg-sec;
+
+    .text {
+        color: $sec-font;
+        font-family: $quicksand;
+        margin-bottom: 1.5em; 
+        line-height: 1.5em;
+        font-size: 0.9em;
+    }
+ 
+    .btn {
+        text-decoration: none;
+        color: $white; 
+        background: $green;  
+        padding: 0.9em 2em; 
+        font-size: 0.9em;
+        transition: 0.5s ease-in-out;
+  
+        &:hover {
+            background: $white;
+            color: $green;
+            border: solid 1px $green;
+        } 
+    }
+}  
+
+// footer 
+
+footer {
+    display: flex; 
+    justify-content: space-between;
+    background: $sec-font;
+    padding: 2em;
+    color: $white;
+    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+ 
+    .left {
+        width: 32%;
+
+        .text {
+            line-height: 1.5em;
+        }
+
+        .light {
+            font-weight: 300; 
+            font-size: 0.8em;
+        } 
+
+        .socials {
+            display: flex;
+
+            .icon-holder {
+                margin-right: 1em; 
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+ 
+    .contact {
+        list-style-type: none;
+
+        h4 { 
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 0.8em;
+            border-bottom: solid 1px $gray-bg;
+            padding-bottom: 0.09em;
+        }
+ 
+        li {
+            padding: 0.2em; 
+        } 
+    }  
+
+    .links {
+        list-style-type: none; 
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        } 
+
+        li { 
+            margin-bottom: 0.2em;
+            color: $white;
+
+            &.active {
+                font-weight: 300;
+                color: $gray-bg !important;  
+            }
+
+            &:hover {  
+                a { 
+                    color: $light-orange; 
+                }
+            }
+        } 
+
+    }
+}   

@@ -7,25 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/THE MIRROR logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="css/layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
+    <div class="intro">
+        <div class="cont">
+            <div class="logo">
+                <img src="./assets/THE MIRROR logo.png" alt="mirror">
+            </div>
+            <div class="circle-1">
+            </div>
+            <div class="circle-2"></div>
+        </div>
+    </div>
     <header>
         <figure class="mirror-logo">
             <img src="./assets/THE MIRROR logo.png" alt="The Mirror Drama Ministry">
         </figure>
         <nav>
-            <li class="active"> <a href="#">Welcome</a> </li>
-            <li><a href="#">Mandate</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Invite Us</a></li>
-            <li><a href="#">Partner with Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"> <a href="#welcome">Welcome</a> </li>
+            <li><a href="#mandate">Mandate</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#invite">Invite Us</a></li>
+            <li><a href="#partner">Partner with Us</a></li>
+            <li><a href="#contact">Contact</a></li>
         </nav>
     </header>
-    <main>
+    <main id="welcome">
         <article class="bible-motto">
             <q>Let your light so <b>shine</b> before men, that they may see your 
                 good works, and glorify your Father which is in Heaven.
@@ -36,7 +47,7 @@
                 <img src="./assets/bible-motto-wave.svg" alt="">
             </div> -->
         </article>
-        <section class="mandate">
+        <section class="mandate" id="mandate">
             <div class="section-title">
                 <div class="icon-holder">
                     <span class="iconify blue" data-icon="emojione-monotone:scroll" data-inline="false"></span>
@@ -101,7 +112,7 @@
                 </article>
             </div>
         </section>
-        <section class="works">
+        <section class="works" id="works">
             <div class="section-title">
                 <div class="icon-holder">
                     <span class="iconify orange" data-icon="fa-solid:briefcase" data-inline="false"></span>
@@ -228,7 +239,7 @@
                 </div>
             </div>
         </section>
-        <section class="ministered">
+        <section class="ministered" id="ministered">
             <div class="section-title">
                 <div class="icon-holder">
                     <span class="iconify red" data-icon="mdi:map-marker-multiple" data-inline="false"></span>
@@ -283,7 +294,7 @@
                 </div>
             </div>
         </section>
-        <section class="cta">
+        <section class="cta" id="invite">
             <p class="text">
                 WE ARE AVAILABLE TO MINISTER GOD’S WORD TO YOUR CONGREGATION
             </p>
@@ -291,6 +302,74 @@
                 INVITE US NOW!!
             </a>
         </section>
+        <section class="cta" id="partner">
+            <p class="text">
+                WE ARE CONSTANTLY CARRYING GOD’S MESSAGE FARTHER, <br> 
+                WANT TO SUPPORT THE VISION?
+            </p>
+            <a href="" class="btn">
+                PARTNER WITH US 
+            </a>
+        </section>
+        <section class="cta" id="join">
+            <p class="text">
+                WANT TO BE A PART OF THE MINISTRY? <br> 
+                JUST FILL A SIMPLE FORM
+            </p>
+            <a href="" class="btn">
+                JOIN US TODAY
+            </a>
+        </section>
     </main>
+    <footer id="contact">
+        <article class="left">
+            <p class="text">
+                The Mirror Theatre is set
+                to take God’s Word farther, with 
+                the use of drama as a mirror to 
+                reflect God’s Message to Mankind.
+            </p>
+            <p class="light">
+                Follow us on Social media
+            </p>
+            <div class="socials">
+                <a class="icon-holder" title="instagram" href="">
+                    <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
+                </a>
+                <a class="icon-holder" title="facebook" href="">
+                    <span class="iconify" data-icon="mdi:facebook-box" data-inline="false"></span>
+                </a>
+                <a class="icon-holder" title="twitter" href="">
+                    <span class="iconify" data-icon="mdi:twitter-box" data-inline="false"></span>
+                </a>
+                <a class="icon-holder" title="youtube" href="">
+                    <span class="iconify" data-icon="mdi:youtube-play" data-inline="false"></span>
+                </a>
+            </div>
+        </article>
+        <div class="contact">
+            <h4>Contact Us</h4>
+            <li>
+                <span class="iconify" data-icon="mdi:whatsapp" data-inline="false"></span> : 
+                +234 706 360 1183
+            </li>
+            <li>
+                <span class="iconify" data-icon="mdi:phone" data-inline="false"></span> :
+                +234 706 360 1183
+            </li>
+            <li>
+                <span class="iconify" data-icon="mdi:gmail" data-inline="false"></span> : 
+                contact@mirrordrama.org
+            </li>
+        </div>
+        <nav class="links">
+            <li class="active"> <a href="#">Welcome</a> </li>
+            <li><a href="#">Mandate</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Invite Us</a></li>
+            <li><a href="#">Partner with Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </nav>
+    </footer>
 </body>
 </html>

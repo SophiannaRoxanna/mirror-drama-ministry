@@ -1,0 +1,59 @@
+.intro {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+
+    // display: none;
+    .cont {
+        width: 70%;
+        height: 70%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 30%;
+        height: 50%;
+        max-height: 500px;
+
+        img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: fill;      
+        } 
+    } 
+
+    .circle-1, .circle-2 {
+        position: absolute;
+        border-radius: 50%;
+        z-index: -10;
+        border: solid $gray-bg; 
+    }
+
+    .circle-1 {
+        animation: circle 2s infinite;
+    }
+
+    .circle-2 { 
+        animation: circle 2s 1s infinite;
+    }
+}      
+
+@keyframes circle {
+    0% { 
+        width: 0%;
+        height: 0%;
+    };
+ 
+    100% {
+        width: 30%;
+        height: 50%; 
+    }
+}
