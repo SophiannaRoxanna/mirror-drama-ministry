@@ -73,9 +73,15 @@ body {
 } 
 
 main {
-    margin-bottom: 250px;
+    margin-bottom: 40vh;
     background: $white;
 
 }  
 
-// 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .example {background: red;}
+    html {
+        font-size: 10px;
+    }
+} 

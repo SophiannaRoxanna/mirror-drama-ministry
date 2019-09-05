@@ -296,6 +296,16 @@ footer .links li:hover a {
   color: #EB9A57;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {
+    background: red;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}
 .card-cont::-webkit-scrollbar {
   width: 0.6em;
 }
@@ -472,8 +482,19 @@ body {
 }
 
 main {
-  margin-bottom: 250px;
+  margin-bottom: 40vh;
   background: #ffffff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {
+    background: red;
+  }
+
+  html {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=layout.css.map */
