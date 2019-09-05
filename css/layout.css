@@ -174,7 +174,7 @@ main > section .sub-cont {
 }
 .card-cont.flex .card {
   min-height: 130px;
-  max-height: 130px;
+  max-height: 180px;
   width: 10%;
   max-width: 150px;
   filter: grayscale(0.9);
@@ -188,10 +188,9 @@ main > section .sub-cont {
 }
 .card-cont.flex .card .church-logo-holder {
   width: 100%;
-  height: 110px;
-  max-height: 80px;
+  height: 130px;
+  max-height: 130px;
   margin: 0;
-  overflow: hidden;
 }
 .card-cont.flex .card .church-logo-holder img {
   width: 100%;
@@ -296,16 +295,6 @@ footer .links li:hover a {
   color: #EB9A57;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .example {
-    background: red;
-  }
-
-  html {
-    font-size: 10px;
-  }
-}
 .card-cont::-webkit-scrollbar {
   width: 0.6em;
 }
@@ -488,10 +477,6 @@ main {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .example {
-    background: red;
-  }
-
   html {
     font-size: 10px;
   }

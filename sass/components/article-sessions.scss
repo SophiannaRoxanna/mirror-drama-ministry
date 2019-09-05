@@ -146,13 +146,13 @@ main > section {
     align-items: center;
     justify-content: space-between;
     margin-top: 1em;
-    padding: 1em 2em; 
+    padding: 1em 2em;  
     overflow-x: auto;
 
     
     .card {
         min-height: 130px;
-        max-height: 130px;
+        max-height: 180px;
         width: 10%;
         max-width: 150px;
         filter: grayscale(0.9);
@@ -167,23 +167,23 @@ main > section {
 
         .church-logo-holder { 
             width: 100%;
-            height: 110px;
-            max-height: 80px;
+            height: 130px;
+            max-height: 130px;
             margin: 0;  
-            overflow: hidden;
+            // overflow: hidden;
 
             img {
                 width: 100%;  
                 height: 100%;   
-                object-fit: fill;
+                object-fit: fill; 
             }
-        } 
- 
+        }  
+  
         .info {
             font-size: 0.8em; 
-            text-align: center;
+            text-align: center; 
             font-weight: bold; 
-            color: $green;
+            color: $green; 
             
             .title {
                 margin-bottom: 0;
