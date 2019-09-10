@@ -1,28 +1,28 @@
-.card-cont::-webkit-scrollbar {
+*.card-cont::-webkit-scrollbar {
     width: 0.6em;
 }
 
-.card-cont::-webkit-scrollbar-track {
+*.card-cont::-webkit-scrollbar-track {
     background: $white;
     box-shadow: inset 0px 0px 10px $shadow;
     border-radius: 10px;
 }
  
-.card-cont::-webkit-scrollbar-button {
+*.card-cont::-webkit-scrollbar-button {
     display: none;
 }
 
-.card-cont::-webkit-scrollbar-thumb {
+*.card-cont::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: $gray-bg-sec;
-} 
- 
+    background: $gray-bg-sec; 
+}  
+  
 div.border {
     width: 80px; 
     height: 2px;
     background: $green;  
 }
- 
+  
 .blue { 
     color: $blue; 
 }

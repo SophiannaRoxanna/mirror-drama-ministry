@@ -137,7 +137,7 @@ main > section .sub-cont {
 .card-cont.grid .card figure img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 .card-cont.grid .card .title {
   font-size: 0.8em;
@@ -175,13 +175,15 @@ main > section .sub-cont {
 .card-cont.flex .card {
   min-height: 130px;
   max-height: 180px;
-  width: 10%;
+  width: 30%;
   max-width: 150px;
   filter: grayscale(0.9);
   transition: 0.4s ease-in-out;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  flex: 1 0 30%;
+  margin-right: 0.8em;
 }
 .card-cont.flex .card:hover {
   filter: none;
@@ -191,11 +193,12 @@ main > section .sub-cont {
   height: 130px;
   max-height: 130px;
   margin: 0;
+  flex: 1 0 100%;
 }
 .card-cont.flex .card .church-logo-holder img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 .card-cont.flex .card .info {
   font-size: 0.8em;
@@ -295,21 +298,21 @@ footer .links li:hover a {
   color: #EB9A57;
 }
 
-.card-cont::-webkit-scrollbar {
+*.card-cont::-webkit-scrollbar {
   width: 0.6em;
 }
 
-.card-cont::-webkit-scrollbar-track {
+*.card-cont::-webkit-scrollbar-track {
   background: #ffffff;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
-.card-cont::-webkit-scrollbar-button {
+*.card-cont::-webkit-scrollbar-button {
   display: none;
 }
 
-.card-cont::-webkit-scrollbar-thumb {
+*.card-cont::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: #8282824f;
 }
@@ -479,6 +482,13 @@ main {
 @media only screen and (max-width: 600px) {
   html {
     font-size: 10px;
+  }
+
+  .card-container.flex {
+    display: block;
+  }
+  .card-container.flex .card {
+    width: 100%;
   }
 }
 

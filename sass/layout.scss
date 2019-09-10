@@ -83,4 +83,12 @@ main {
     html {
         font-size: 10px;
     }
+
+    .card-container.flex {
+        display: block;
+
+        .card { 
+            width: 100%;
+        }
+    }
 } 
