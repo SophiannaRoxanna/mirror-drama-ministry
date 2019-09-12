@@ -1,0 +1,27 @@
+.modal {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 3000;
+    background: $modal-bg;
+    align-items: center;
+    right: 0;
+    top: 0;
+    
+    .close {
+        position: absolute;
+        right: 10%;
+        top: 10%; 
+        font-size: 2em;
+        color: $white;
+    } 
+    
+    .image-holder {
+        width: 60%;
+        height: 80%; 
+        margin: auto;     
+        border: solid 1px red;
+
+    }
+} 

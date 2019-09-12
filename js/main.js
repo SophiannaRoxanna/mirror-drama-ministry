@@ -1,7 +1,7 @@
+let imageHolder = [];
+
 const fillImages = data => {
-    const imageHolder = [];
     const imageCont = $('.image-cont');
-    console.log(imageCont);
 
     for (let i = 0; i < data.imageShow.length; i++) {
         
@@ -9,7 +9,7 @@ const fillImages = data => {
         card.classList.add('card');
         card.innerHTML = `
             <figure class="image-holder" id="image-holder">
-                <img src="${data["imageShow"][i].imgUrl}" alt="studio">
+                <img src="${data["imageShow"][i].imgUrl}" alt="${data["imageShow"][i].title}" image onclick=modal()>
             </figure>
             <div class="info">
                 <p class="title">${data["imageShow"][i].title}</p>
@@ -19,12 +19,14 @@ const fillImages = data => {
 
         imageCont.appendChild(card);
         imageHolder.push(card);
+
+        
     }
+    
 }
 
 const fillVideos = data => {
     const videoCont = $('.video-cont');
-    console.log(videoCont);
 
     for (let i = 0; i < data.videoReel.length; i++) {
         
@@ -46,7 +48,6 @@ const fillVideos = data => {
 
 const fillMinistered = data => {
     const logoCont = $('.logo-cont');
-    console.log(logoCont);
 
     for (let i = 0; i < data.ministered.length; i++) {
         
@@ -64,8 +65,41 @@ const fillMinistered = data => {
 
         logoCont.appendChild(card);
     }
-
+    
 }
+
+// modal
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const imageCont = $('.image-cont');
+        const modalImage = imageCont.querySelectorAll("[image]");
+        modalImage.addEventListener('click', modal);
+        console.log(modalImage);
+    }, 4000);
+})
+
+
+const modal = () => {
+    const modalHolder = $(".modal");
+    const closeBtn = $(".close");
+    const body = $(".body");
+    const image = $(".modal img");
+    
+
+    
+    closeBtn.addEventListener('click', () => {
+        modalHolder.style.display = "none";
+        body.style.zIndex = "1";
+    })
+    
+    image.src = this.src;
+    modalHolder.style.display = "flex";
+    body.style.zIndex = "-1000";
+
+    // image.
+    console.log(modalHolder, "modal works", imageHolder ); 
+}
+
 
 
 
@@ -78,7 +112,6 @@ const fillContent = () => {
             response.json(api)
         )
         .then(data => {
-            console.log(data);
             fillImages(data);
             fillVideos(data);
             fillMinistered(data);
@@ -87,6 +120,4 @@ const fillContent = () => {
 }
 
 fillContent();
-
-// modal
 

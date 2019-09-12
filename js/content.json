@@ -2,12 +2,12 @@
     "imageShow" : [
         {
             "imgUrl" : "./assets/IMG-20190830-WA0012.jpg",
-            "title" : "First Drama",
+            "title" : "First image",
             "time" : "12-08-2019"
         },
         {
             "imgUrl" : "./assets/IMG-20190830-WA0013.jpg",
-            "title" : "Mirror Drma",
+            "title" : "Mirror Drama",
             "time" : "15-03-2019"
         },
         {
@@ -58,19 +58,19 @@
     "ministered" : [
         {
             "imgUrl" : "./assets/LSPLOGO.png",
-            "title" : "RCCG Life Sancturay Parish"
+            "title" : "RCCG Life Sancturay Parish "
         },
         {
             "imgUrl" : "./assets/rccg-logo.png",
-            "title" : "RCCG Mercy Seat Parish"
-        },
-        {
-            "imgUrl" : "./assets/IMG-20190830-WA0011.jpg",
-            "title" : "The Mirror Theatre Team"
+            "title" : "RCCG National Drama Conference 2018"
         },
         {
             "imgUrl" : "./assets/rccg-logo.png",
-            "title" : "RCCG Shepherd Hill Parish"
+            "title" : "RCCG Region 5 Arise, 2016 & 2017"
+        },
+        {
+            "imgUrl" : "./assets/rccg-logo.png",
+            "title" : "RCCG Shepherd Hill Parish, Rivers 8 Provincial Headquarter"
         },
         {
             "imgUrl" : "./assets/rccg-logo.png",

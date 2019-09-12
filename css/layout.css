@@ -205,6 +205,7 @@ main > section .sub-cont {
   text-align: center;
   font-weight: bold;
   color: #219653;
+  flex-shrink: 0;
 }
 .card-cont.flex .card .info .title {
   margin-bottom: 0;
@@ -268,12 +269,12 @@ footer .left .socials .icon-holder {
 }
 footer .contact {
   list-style-type: none;
+  width: 32%;
 }
 footer .contact h4 {
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   margin-bottom: 0.8em;
-  border-bottom: solid 1px #828282;
   padding-bottom: 0.09em;
 }
 footer .contact li {
@@ -281,6 +282,7 @@ footer .contact li {
 }
 footer .links {
   list-style-type: none;
+  width: 25%;
 }
 footer .links a {
   text-decoration: none;
@@ -343,21 +345,26 @@ div.border {
   color: #28A928;
 }
 
+.white {
+  color: #ffffff;
+}
+
 .no-shadow {
   box-shadow: none !important;
 }
 
 .intro {
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
   z-index: 100;
   transition: 1s ease-in-out;
   left: 0;
+  top: 0;
 }
 .intro.hide {
   left: 110vw;
@@ -413,6 +420,31 @@ div.border {
 .body.show {
   display: block;
   left: 0;
+}
+
+.modal {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 3000;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  right: 0;
+  top: 0;
+}
+.modal .close {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  font-size: 2em;
+  color: #ffffff;
+}
+.modal .image-holder {
+  width: 60%;
+  height: 80%;
+  margin: auto;
+  border: solid 1px red;
 }
 
 * {
@@ -489,6 +521,19 @@ main {
   }
   .card-container.flex .card {
     width: 100%;
+  }
+
+  .church-logo-holder {
+    height: 80px !important;
+    max-height: 80px !important;
+    flex: 1 0 100%;
+  }
+
+  footer .left {
+    flex: 1 0 32%;
+  }
+  footer .contact {
+    flex: 1 0 32%;
   }
 }
 

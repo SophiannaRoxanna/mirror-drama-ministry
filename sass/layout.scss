@@ -4,6 +4,7 @@
 @import 'components/article-sessions.scss'; 
 @import 'components/components.scss';
 @import 'components/intro.scss';
+@import 'components/modal.scss';
 
 * {
     box-sizing: border-box;
@@ -89,6 +90,25 @@ main {
 
         .card { 
             width: 100%;
+        }
+    }
+
+    .church-logo-holder { 
+        height: 80px !important;
+        max-height: 80px !important;
+        flex: 1 0 100%;
+        // overflow: hidden;
+
+    }  
+
+    footer {
+        .left {
+            flex:1 0 32%;
+        }
+
+        .contact {
+            flex:1 0 32%;
+
         }
     }
 } 

@@ -181,12 +181,13 @@ main > section {
                 object-fit: cover; 
             }
         }  
-  
+   
         .info {
             font-size: 0.8em; 
             text-align: center; 
             font-weight: bold; 
             color: $green; 
+            flex-shrink: 0;
             
             .title {
                 margin-bottom: 0;
@@ -264,12 +265,12 @@ footer {
  
     .contact {
         list-style-type: none;
+        width: 32%;
 
         h4 { 
             font-weight: 600;
-            text-align: center;
+            text-align: left;
             margin-bottom: 0.8em;
-            border-bottom: solid 1px $gray-bg;
             padding-bottom: 0.09em;
         }
  
@@ -280,11 +281,12 @@ footer {
 
     .links {
         list-style-type: none; 
+        width: 25%;
 
         a {
             text-decoration: none;
             color: inherit;
-        } 
+        }  
 
         li { 
             margin-bottom: 0.2em;
