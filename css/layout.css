@@ -42,6 +42,7 @@ header nav li.active {
 header nav li:hover a {
   color: #EB5757;
 }
+
 header nav li a {
   text-decoration: none;
   color: #000000;
@@ -329,8 +330,9 @@ div.border {
   color: #1E7E7E;
 }
 
+/* Sophia changed this color */
 .red {
-  color: #EB5757;
+  color: #ff8080;
 }
 
 .gray {
@@ -453,7 +455,7 @@ div.border {
 
 body {
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", "Montserrat", sans-serif;
 }
 
 .bible-motto {
@@ -478,7 +480,7 @@ body {
 }
 .bible-motto q:before {
   content: ' " ';
-  color: #EB5757;
+ color: #ff8080;   /* Sophia changed this color */
   font-size: 5em;
   position: absolute;
   left: -0.33em;
